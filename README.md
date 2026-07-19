@@ -5,7 +5,7 @@ A tab page featuring birbs (or birds for old fashioned people).
 The birb tab (BirbyTaby) is a simple custom new tab page designed to make opening a new tab a little more fun and cozy.
 
 ## Live Demo
-Try it: 
+Try it: https://glowing-kelpie-95e187.netlify.app/
 
 ---
 
@@ -13,11 +13,10 @@ Try it:
 * **Live Clock**
 * **Current Date**
 * **Time-Based Greeting**
-* **Search Bar**
-* **Light/Dark Mode**
+* **Working Search Bar**
 * **Notepad**
 * **Apps Shortcuts**
-* **Floating Bird (in a line)**
+* **Floating Birds (in a line)**
 
 ## Coding Languages Used
 * **HTML5**
