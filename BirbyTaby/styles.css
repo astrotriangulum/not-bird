@@ -1,0 +1,149 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background: #B9E6FF 0%; color: #2F3542;transition: 0.4s; 
+}
+.floating{
+    inset: 0; overflow: hidden; pointer-events: none;
+    position: fixed;
+}
+.floating span{
+    position: absolute; font-size: 1.8rem; opacity: 0.5;
+    left: -10%; animation: float linear infinite;
+}
+.floating span:nth-child(1){
+    top: 10%; animation-duration: 20s;
+}
+.floating span:nth-child(2){
+    top: 28%; animation-duration: 25s;
+}
+.floating span:nth-child(3){
+    top: 50%; animation-duration: 18s;
+}
+.floating span:nth-child(4){
+    top: 70%; animation-duration: 22s;
+}
+.floating span:nth-child(5){
+    top: 89%; animation-duration: 27s;
+}
+@keyframes float{
+    from{transform: translateX(0)}
+    to{transform: translateX(120vw)}
+}
+.conta{
+    width: 92%; max-width: 1400px; margin: 20px auto 70px auto;
+    display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: auto auto auto auto auto;
+    gap: 18px; 
+}
+header{
+    text-align: center; grid-column: 1/3;
+}
+header h1{
+    font-size: 2.8rem; font-weight: 800;
+}
+header p{
+    margin-top: 5px; opacity: 0.8; font-size: 1rem;
+}
+.crd{
+    background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(12px); padding: 18px;
+    border-radius: 20px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.searcrd{
+    grid-column: 1/3;
+}
+#seaform{
+    display: flex; margin-top: 12px; gap: 8px;
+}
+#seainput{
+    padding: 12px 15px; flex: 1; border-radius: 15px;
+    font-size: 1rem; outline: none; border: none;
+}
+#seaform button{
+    border: none; padding: 0 22px; background: #EEF7FF;
+    border-radius: 15px; font-weight: bold;
+}
+#seaform button:hover{
+    background: #D8F3DC;
+}
+.greecrd{
+    display: grid; align-items: center; gap: 8px;
+    grid-template-columns: 1.6fr 1fr;
+}
+.greetx{
+    display: flex; justify-content: center; flex-direction: column;
+}
+.greetx h2{
+    font-size: 2rem; margin-bottom: 8px;
+}
+.greetx p{
+    opacity: 0.8; font-size: 0.95rem;
+}
+#birimg{
+    object-fit: cover; width: 100%; height: 180px;
+    border-radius: 16px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.timson{
+    display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+}
+.timcrd, .datecrd{
+    display: flex; text-align: center; align-items: center;
+    flex-direction: column; justify-content: center;
+}
+.timcrd h3, .datecrd h3{
+    margin-bottom: 12px; opacity: 0.75;
+}
+#clock{
+    font-weight: 800; font-size: 2.2rem;
+}
+#date{
+    font-size: 1.15rem;
+}
+.notecrd{
+    display: flex; flex-direction: column;
+}
+.notecrd h3{
+    margin-bottom: 12px;
+}
+#notes{
+    flex: 1; border: none; resize: none;
+    outline: none; border-radius: 15px; padding: 14px;
+    font-size: 1rem; background: rgba(255, 255, 255, 0.7); min-height: 180px;
+}
+.notebtts{
+    margin-top: 12px; display: flex; gap: 10px;
+    justify-content: flex-end;
+}
+.notebtts button{
+    padding: 10px 18px; border: none; border-radius: 12px;
+    font-weight: bold; transition: 0.2s; background: #8ED081;
+}
+.notebtts button:hover{
+    transform: translateY(-2px); background: #D8F3DC;
+}
+.fav h3{
+    margin-bottom: 15px;
+}
+.favgrd{
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;
+}
+.favgrd a{
+    text-decoration: none; color: #2F3542; background: rgba(255, 255, 255, 0.65);
+    padding: 18px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 10px;
+    border-radius: 18px; transition: 0.2s;
+}
+.favgrd a:hover{
+    background: #D8F3DC; transform: translateY(-4px);
+}
+.favgrd img{
+    width: 42px; height: 42px; object-fit: contain;
+}
+.favgrd span{
+    font-size: 0.9rem; font-weight: 700;
+}
+footer{
+    text-align: center; margin: 25px 0; opacity: 0.7; 
+    font-size: 0.9rem; font-family:'Times New Roman', Times, serif;
+}
